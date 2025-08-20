@@ -2,3 +2,6 @@ baseURL = 'https://nnberg.com/'
 languageCode = 'en-us'
 title = 'nnberg.com'
 theme = 'ananke'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
