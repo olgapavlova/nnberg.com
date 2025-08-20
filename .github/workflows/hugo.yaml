@@ -90,6 +90,8 @@ jobs:
         with:
           path: ${{ runner.temp }}/hugo_cache
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+      - name: Add CNAME to artifact
+        run: echo "nnberg.com" > public/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -104,5 +106,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-		with:
-		  cname: nnberg.com
