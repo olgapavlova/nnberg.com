@@ -1,4 +1,4 @@
-baseURL = 'https://nnberg.com/'
+baseURL = 'http://www.nnberg.com/'
 languageCode = 'en-us'
 title = 'nnberg.com'
 theme = 'ananke'
